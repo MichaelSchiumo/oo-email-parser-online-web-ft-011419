@@ -17,18 +17,6 @@ class EmailParser
     @emails.split(/[,\s]+/).uniq
   end 
   
-  
-  
- 
-  #def parse
-   # if @emails.include?(",")
-      #regex via scan
-      #@emails.split(", ")
-    #else  
-    #@emails.split(' ')
-    #end.uniq
-  #end
-  
 end
 
 
