@@ -12,15 +12,22 @@ class EmailParser
   def initialize(emails)
     @emails = emails
   end 
+  
+  def parse 
+    @emails.split(/[,\s]+/)
+  end  
+  
+  
+  
  
-  def parse
-    if @emails.include?(",")
+  #def parse
+   # if @emails.include?(",")
       #regex via scan
-      @emails.split(", ")
-    else  
-    @emails.split(' ')
-    end.uniq
-  end
+      #@emails.split(", ")
+    #else  
+    #@emails.split(' ')
+    #end.uniq
+  #end
   
 end
 
